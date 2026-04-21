@@ -1,0 +1,98 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 2249 >> stream
+BT
+/F1 10 Tf
+50 780 Td (Gamma Correction and Tone Processing Study Notes) Tj
+0 0 Td
+50 768 Td () Tj
+0 0 Td
+50 756 Td (Gamma Correction and Tone Processing Study Notes) Tj
+0 0 Td
+50 744 Td () Tj
+0 0 Td
+50 732 Td (1. Why this topic matters) Tj
+0 0 Td
+50 720 Td (Human vision is non-linear. Gamma and tone processing align image values with perception.) Tj
+0 0 Td
+50 708 Td () Tj
+0 0 Td
+50 696 Td (2. Power Law Transformations) Tj
+0 0 Td
+50 684 Td (s = c * r^gamma for r in [0,1]. gamma<1 brightens, gamma>1 darkens.) Tj
+0 0 Td
+50 672 Td (Worked example: r=0.25, gamma=0.5 gives 0.5. r=0.25, gamma=2.2 gives about 0.047.) Tj
+0 0 Td
+50 660 Td () Tj
+0 0 Td
+50 648 Td (3. Perceptual motivation) Tj
+0 0 Td
+50 636 Td (Non-linear transfer allocates precision where perception is strongest.) Tj
+0 0 Td
+50 624 Td () Tj
+0 0 Td
+50 612 Td (4. Gamma Encoding and Decoding) Tj
+0 0 Td
+50 600 Td (Encode linear values for display, decode encoded values for linear operations.) Tj
+0 0 Td
+50 588 Td () Tj
+0 0 Td
+50 576 Td (5. Non-linear standards) Tj
+0 0 Td
+50 564 Td (sRGB piecewise transfer, Log encodings, Rec.2020 context.) Tj
+0 0 Td
+50 552 Td () Tj
+0 0 Td
+50 540 Td (6. Tone Curves) Tj
+0 0 Td
+50 528 Td (Sigmoid/S-curves shape midtone contrast and protect extremes.) Tj
+0 0 Td
+50 516 Td () Tj
+0 0 Td
+50 504 Td (7. HDR Tone Mapping) Tj
+0 0 Td
+50 492 Td (Global and local operators compress scene range to display range.) Tj
+0 0 Td
+50 480 Td () Tj
+0 0 Td
+50 468 Td (8. Real-world applications) Tj
+0 0 Td
+50 456 Td (Photography, cinema post, medical imaging, machine vision preprocessing.) Tj
+0 0 Td
+50 444 Td () Tj
+0 0 Td
+50 432 Td (9. Common misconceptions) Tj
+0 0 Td
+50 420 Td (Gamma is not simple brightness, and tone mapping does not recover clipped data.) Tj
+0 0 Td
+50 408 Td () Tj
+0 0 Td
+50 396 Td (10. Key papers and standards) Tj
+0 0 Td
+50 384 Td ([1] Reinhard et al. SIGGRAPH 2002. URL: https://dl.acm.org/doi/10.1145/566570.566575) Tj
+0 0 Td
+50 372 Td ([2] Mantiuk et al. ACM TOG 2006. URL: https://dl.acm.org/doi/10.1145/1141911.1141915) Tj
+0 0 Td
+50 360 Td ([3] IEC 61966-2-1 sRGB. URL: https://www.color.org/chardata/rgb/srgb.xalter) Tj
+0 0 Td
+50 348 Td ([4] ITU-R BT.2020. URL: https://www.itu.int/rec/R-REC-BT.2020) Tj
+0 0 Td
+50 336 Td () Tj
+0 0 Td
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+2612
+%%EOF

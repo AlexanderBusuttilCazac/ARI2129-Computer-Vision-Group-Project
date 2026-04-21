@@ -1,0 +1,46 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 999 >> stream
+BT
+/F1 10 Tf
+50 780 Td (Gamma Correction and Tone Processing Presentation) Tj
+0 0 Td
+50 768 Td () Tj
+0 0 Td
+50 756 Td (1. Gamma Correction and Tone Processing: Point Processing project overview) Tj
+0 0 Td
+50 744 Td (2. Power Law Transform: s = c*r^gamma and its parameter effects.) Tj
+0 0 Td
+50 732 Td (3. Perceptual Motivation: Human vision sensitivity is non-linear.) Tj
+0 0 Td
+50 720 Td (4. Non-linear Encoding: sRGB, Log-like encoding, Rec.2020 context.) Tj
+0 0 Td
+50 708 Td (5. Tone Curves: Sigmoid/S-curves for midtone contrast control.) Tj
+0 0 Td
+50 696 Td (6. HDR Tone Mapping: Global vs local operator tradeoffs.) Tj
+0 0 Td
+50 684 Td (7. Failure Cases: Halo artifacts, clipped highlights, noise amplification.) Tj
+0 0 Td
+50 672 Td (8. When NOT to Use: Avoid for measurement-critical, physically linear tasks.) Tj
+0 0 Td
+50 660 Td (9. Case Study: Photography RAW to display pipeline.) Tj
+0 0 Td
+50 648 Td (10. Summary: Process in linear where needed, encode for display output.) Tj
+0 0 Td
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1361
+%%EOF

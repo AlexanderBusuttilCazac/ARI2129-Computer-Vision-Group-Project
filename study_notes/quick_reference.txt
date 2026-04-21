@@ -1,0 +1,55 @@
+GAMMA CORRECTION & TONE PROCESSING QUICK REFERENCE
+==================================================
+
+Core equations
+--------------
+1) Power law transform
+   s = c * r^gamma
+   r,s in [0,1], c usually 1.
+
+2) Gamma encode (linear -> display-like)
+   V = L^(1/gamma)
+
+3) Gamma decode (display-like -> linear)
+   L = V^gamma
+
+4) Piecewise sRGB transfer (approx)
+   Encode:
+   if L <= 0.0031308: V = 12.92 L
+   else: V = 1.055 L^(1/2.4) - 0.055
+   Decode:
+   if V <= 0.04045: L = V/12.92
+   else: L = ((V+0.055)/1.055)^2.4
+
+5) Reinhard global tone mapping (HDR -> LDR)
+   L_d = L / (1 + L)
+
+Parameter effects
+-----------------
+- gamma < 1: brightens shadows, can flatten highlights.
+- gamma > 1: darkens midtones/shadows, can increase perceived contrast.
+- S-curve strength: stronger S increases contrast around midtones but may clip extremes.
+- Exposure in tone mapping: shifts input luminance before compression.
+
+Typical ranges
+--------------
+- Display gamma: 2.2 to 2.4
+- UI gamma slider for enhancement: 0.2 to 3.0
+- Reinhard white point: 1.0 to 8.0 (scene-dependent)
+- Sigmoid slope k: 2 to 20
+
+Common misconceptions
+---------------------
+- "Gamma correction is just brightness": False; it is a non-linear remapping.
+- "All images are linear": False; many are already gamma encoded (sRGB).
+- "Tone mapping restores lost HDR detail": False; it compresses dynamic range for display.
+- "Rec.2020 means HDR": False; Rec.2020 is a color gamut/transfer framework, not a tone map.
+
+Glossary
+--------
+- Scene-referred: values proportional to scene radiance.
+- Display-referred: values optimized for output display response.
+- Dynamic range: ratio between brightest and darkest reproducible intensities.
+- Tone curve: non-linear mapping from input intensity to output intensity.
+- Local tone mapping: adapts mapping based on neighborhood content.
+- Global tone mapping: single mapping function for all pixels.

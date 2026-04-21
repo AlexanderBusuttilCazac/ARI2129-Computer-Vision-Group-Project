@@ -1,0 +1,52 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1034 >> stream
+BT
+/F1 10 Tf
+50 780 Td (Adversarial Quiz Explanation) Tj
+0 0 Td
+50 768 Td () Tj
+0 0 Td
+50 756 Td (Adversarial Quiz Explanation) Tj
+0 0 Td
+50 744 Td () Tj
+0 0 Td
+50 732 Td (Q1 Gamma<1 brightens low values because the power curve expands dark regions.) Tj
+0 0 Td
+50 720 Td (Q2 sRGB is piecewise, not one exponent for all values.) Tj
+0 0 Td
+50 708 Td (Q3 Tone mapping compresses dynamic range; it cannot restore clipped information.) Tj
+0 0 Td
+50 696 Td (Q4 Linear operations should run in linear light, not encoded space.) Tj
+0 0 Td
+50 684 Td (Q5 Global operators are fast but may lose local contrast.) Tj
+0 0 Td
+50 672 Td (Q6 Local operators preserve detail but can create halo artifacts.) Tj
+0 0 Td
+50 660 Td (Q7 Rec.2020 is not a tone mapper by itself.) Tj
+0 0 Td
+50 648 Td (Q8 Log encodings differ from gamma in value allocation behavior.) Tj
+0 0 Td
+50 636 Td (Q9 Double gamma happens when encoded data is encoded again.) Tj
+0 0 Td
+50 624 Td (Q10 Aggressive brightening can amplify shadow noise.) Tj
+0 0 Td
+50 612 Td () Tj
+0 0 Td
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1397
+%%EOF
