@@ -5,8 +5,9 @@ import cv2 # type: ignore
 
 
 # Constants
-DEFAULT_IMAGE_NAME = "power_input.jpg"
-DEFAULT_TONE_IMAGE_NAME = "hdr_input.hdr"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DEFAULT_IMAGE_NAME = BASE_DIR / "default_images" / "power_input.jpg"
+DEFAULT_TONE_IMAGE_NAME = BASE_DIR / "default_images" / "hdr_input.hdr"
 
 
 def apply_gamma_correction(img: np.ndarray, gamma: float, c: float = 255.0) -> np.ndarray:
@@ -58,18 +59,18 @@ def apply_hable(img: np.ndarray, exposure: float = 1.0, gamma: float = 1.0 / 2.2
 
 @st.cache_data()
 def load_default_gamma_correction_image() -> np.ndarray:
-	default_path = Path(__file__).with_name(DEFAULT_IMAGE_NAME)
-	
-	img = cv2.imread(default_path, cv2.IMREAD_COLOR)
+	default_path = DEFAULT_IMAGE_NAME
+
+	img = cv2.imread(str(default_path), cv2.IMREAD_COLOR)
 	return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 #
 
 @st.cache_data()
 def load_default_tone_mapping_image() -> np.ndarray:
-	default_path = Path(__file__).with_name(DEFAULT_TONE_IMAGE_NAME)
-	
+	default_path = DEFAULT_TONE_IMAGE_NAME
+
 	# HDR read
-	img = cv2.imread(default_path, -1)
+	img = cv2.imread(str(default_path), -1)
 	return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 #
 
