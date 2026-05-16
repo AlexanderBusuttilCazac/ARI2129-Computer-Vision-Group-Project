@@ -1,0 +1,14 @@
+# ARI2129-Computer-Vision-Group-Project
+
+This is the repository containing all files required for submission, primarily touching upon **gamma correction** and **tone mapping** (Topic 9).
+
+### Team members:
+- Alexander Busuttil Cazac
+- Nicholai Camilleri
+- Zack Haber
+- Sarah Demanuele
+- Reuben Mifsud
+
+<br>
+
+`requirements.txt` contains the required packages for both the code walkthrough as well as the simulator.
