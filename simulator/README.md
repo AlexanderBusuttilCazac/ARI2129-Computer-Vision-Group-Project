@@ -5,4 +5,4 @@
 3. Navigate to the "simulator" folder within the repository root.
 4. In your terminal, run `pip install -r requirements.txt` to install all required libraries.
 
-Now you may run `streamlit run App.py` to view the simulator!
+Now you may run `streamlit run app.py` to view the simulator!
